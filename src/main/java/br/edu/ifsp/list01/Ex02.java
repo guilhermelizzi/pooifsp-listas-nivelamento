@@ -39,15 +39,11 @@ public class Ex02 {
             return "Nao forma triangulo";
         }
 
-        if (a == b && b == c) {
+       if (a == b && b == c) {
             return "Equilatero";
-        }
-
-        else if (a == b || a == c || b == c) {
+        } else if (a == b || a == c || b == c) {
             return "Isosceles";
-        }
-
-        else {
+        } else {
             return "Escaleno";
         }
 
