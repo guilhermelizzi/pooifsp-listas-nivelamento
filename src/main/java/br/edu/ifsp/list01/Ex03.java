@@ -17,15 +17,32 @@ package br.edu.ifsp.list01;
 public class Ex03 {
 
     public static void main(String[] args) {
-        //Leia o input
-        //Crie uma variável do tipo deste arquivo. Exemplo: Ex02 ex = new Ex02();
-        //Escreva o resultado da chamada do método compute() aqui
+//        final Scanner scanner = new Scanner(System.in);
+//        final int input = scanner.nextInt();
+//        final Ex03 ex03 = new Ex03();
+//        System.out.println(ex01.compute(input));
     }
 
 
-    String compute(int input) {
-        String output = null;
-        //put your logic here
-        return output;
+    String compute(int ano) {
+        boolean bissexto;
+
+        if (ano <= 0) {
+            return "Erro";
+        }
+
+        if(ano%400 == 0){
+            bissexto = true;
+        } else if (ano%4 == 0 && ano%100 != 0) {
+            bissexto = true;
+        }else{
+            bissexto = false;
+        }
+
+        if(bissexto){
+            return "Ano bissexto";
+        }else{
+            return"Ano nao bissexto";
+        }
     }
 }
