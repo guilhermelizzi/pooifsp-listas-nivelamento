@@ -1,5 +1,7 @@
 package br.edu.ifsp.list01;
 
+import java.util.Locale;
+
 /*
     A avenida principal da cidade de Algoritmopolis possui limite de velocidade de L km/h.
     Se o motorista ultrapassar essa velocidade, é aplicado uma multa de R$ M, mais R$ A
